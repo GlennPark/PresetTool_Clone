@@ -51,6 +51,7 @@ END_MESSAGE_MAP()
 // CPresetToolDlg 대화 상자
 
 
+
 IMPLEMENT_DYNAMIC(CPresetToolDlg, CDialogEx);
 
 CPresetToolDlg::CPresetToolDlg(CWnd* pParent /*=nullptr*/)
@@ -73,6 +74,8 @@ CPresetToolDlg::~CPresetToolDlg()
 void CPresetToolDlg::DoDataExchange(CDataExchange* pDX)
 {
 	CDialogEx::DoDataExchange(pDX);
+	DDX_Control(pDX, IDC_MAIN_TAB, m_mainTab);
+
 }
 
 BEGIN_MESSAGE_MAP(CPresetToolDlg, CDialogEx)
@@ -130,11 +133,10 @@ BOOL CPresetToolDlg::OnInitDialog()
 	RECT mainWindowRect;
 	::GetWindowRect(m_hWnd, &mainWindowRect);
 	::MoveWindow(m_hWnd, 0, 0, window_X, window_Y - 30 * dMax_Y, TRUE);
-
-//	::MoveWindow(m_, 0, 0, window_X, window_Y - 30 * dMax_Y, TRUE);)
+	::MoveWindow(m_mainTab, 0, 0, window_X, window_Y - 30 * dMax_Y, TRUE);
 	
-
-
+		
+	m_mainTab.Init();
 	return TRUE;  // 포커스를 컨트롤에 설정하지 않으면 TRUE를 반환합니다.
 }
 

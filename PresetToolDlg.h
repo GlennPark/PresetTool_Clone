@@ -8,6 +8,7 @@
 #include "PanoDlg.h"
 #include "CTDlg.h"
 
+#include "MainTab.h"
 class CPresetToolDlgAutoProxy;
 
 
@@ -23,20 +24,15 @@ public:
 	virtual ~CPresetToolDlg();
 
 	
+
 	// 창 크기 설정
 	int window_X, window_Y = 0;
 
 	// 창 최대 크기 설정
 	double dMax_X, dMax_Y = 0;
 
-	CTabCtrl m_mainTab;
-
-	CephDlg* m_cephDlg;
-	CTDlg* m_ctDlg;
-	PanoDlg* m_panoDlg;
-
-
-
+	MainTab m_mainTab;
+	
 // 대화 상자 데이터입니다.
 #ifdef AFX_DESIGN_TIME
 	enum { IDD = IDD_PRESETTOOL_DIALOG };
