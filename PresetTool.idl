@@ -1,0 +1,29 @@
+﻿// PresetTool.idl: PresetTool.exe의 형식 라이브러리 소스
+
+// 이 파일은 MIDL 컴파일러에 의해 처리되어
+// 형식 라이브러리(PresetTool.tlb)입니다.
+
+[ uuid(3e602001-4af8-4000-8d3e-6ee563226a76), version(1.0) ]
+library PresetTool
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	//  CPresetToolDoc의 기본 디스패치 인터페이스
+
+	[ uuid(abf18b33-9e3b-4702-a52e-26a70f941057) ]
+	dispinterface IPresetTool
+	{
+		properties:
+
+		methods:
+	};
+
+	//  CPresetToolDoc에 대한 클래스 정보
+
+	[ uuid(b3c46d07-8c48-4de7-a3d8-d7d67862f52f) ]
+	coclass PresetTool
+	{
+		[default] dispinterface IPresetTool;
+	};
+};
