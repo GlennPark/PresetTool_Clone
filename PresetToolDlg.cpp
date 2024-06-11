@@ -130,8 +130,11 @@ BOOL CPresetToolDlg::OnInitDialog()
 	RECT mainWindowRect;
 	::GetWindowRect(m_hWnd, &mainWindowRect);
 	::MoveWindow(m_hWnd, 0, 0, window_X, window_Y - 30 * dMax_Y, TRUE);
-	::MoveWindow(m_, 0, 0, window_X, window_Y - 30 * dMax_Y, TRUE);)
+
+//	::MoveWindow(m_, 0, 0, window_X, window_Y - 30 * dMax_Y, TRUE);)
 	
+
+
 	return TRUE;  // 포커스를 컨트롤에 설정하지 않으면 TRUE를 반환합니다.
 }
 
