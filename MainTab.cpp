@@ -74,7 +74,7 @@ void MainTab::SetTabDialogRect()
 	int tabDialogWidth = tabDialogRect.right - tabDialogRect.left;
 	int tabDialogHeight = tabDialogRect.bottom - tabItemBottom;
 
-
+	//우측 방향에서 Dialog 크기가 줄어들 때 탭 크기도 줄어들도록 변경 필요
 	m_tabDialog[0]->SetWindowPos(&wndTop, tabItemLeft, (tabItemBottom + tabItemHeight) * dMaxTabDialog_Y, tabDialogWidth, tabDialogHeight, SWP_SHOWWINDOW);
 	
 	for (int nCount = 1; nCount < m_tabDialogNum; nCount++)

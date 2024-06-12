@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{7FAE6A0E-9EF6-47E2-B3F5-0ECCCCDCBBA1}|PresetTool.vcxproj|solutionrelative:MainTab.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{7FAE6A0E-9EF6-47E2-B3F5-0ECCCCDCBBA1}|PresetTool.vcxproj|C:\\OSSTEM\\VersionControl\\PresetTool_Clone\\PresetToolDlg.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7FAE6A0E-9EF6-47E2-B3F5-0ECCCCDCBBA1}|PresetTool.vcxproj|solutionrelative:PresetToolDlg.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7FAE6A0E-9EF6-47E2-B3F5-0ECCCCDCBBA1}|PresetTool.vcxproj|C:\\OSSTEM\\VersionControl\\PresetTool_Clone\\MainTab.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{7FAE6A0E-9EF6-47E2-B3F5-0ECCCCDCBBA1}|PresetTool.vcxproj|solutionrelative:MainTab.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -17,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{7FAE6A0E-9EF6-47E2-B3F5-0ECCCCDCBBA1}|PresetTool.vcxproj|C:\\OSSTEM\\VersionControl\\PresetTool_Clone\\PresetToolDlg.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{7FAE6A0E-9EF6-47E2-B3F5-0ECCCCDCBBA1}|PresetTool.vcxproj|solutionrelative:PresetToolDlg.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FAE6A0E-9EF6-47E2-B3F5-0ECCCCDCBBA1}|PresetTool.vcxproj|C:\\OSSTEM\\VersionControl\\PresetTool_Clone\\PresetToolDlg.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7FAE6A0E-9EF6-47E2-B3F5-0ECCCCDCBBA1}|PresetTool.vcxproj|solutionrelative:PresetToolDlg.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7FAE6A0E-9EF6-47E2-B3F5-0ECCCCDCBBA1}|PresetTool.vcxproj|C:\\OSSTEM\\VersionControl\\PresetTool_Clone\\PresetTool.rc||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n       % \u00A3 2$  \u0022     ",
@@ -54,13 +54,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "PresetToolDlg.cpp",
               "DocumentMoniker": "C:\\OSSTEM\\VersionControl\\PresetTool_Clone\\PresetToolDlg.cpp",
               "RelativeDocumentMoniker": "PresetToolDlg.cpp",
               "ToolTip": "C:\\OSSTEM\\VersionControl\\PresetTool_Clone\\PresetToolDlg.cpp",
               "RelativeToolTip": "PresetToolDlg.cpp",
-              "ViewState": "AQIAAHUAAAAAAAAAAAAAAJEAAABEAAAA",
+              "ViewState": "AQIAAHUAAAAAAAAAAAAAAI0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-06-12T00:06:42.316Z",
               "EditorCaption": ""
@@ -74,8 +74,7 @@
               "ToolTip": "C:\\OSSTEM\\VersionControl\\PresetTool_Clone\\PresetTool.rc - IDD_PANO_DIALOG - Dialog",
               "RelativeToolTip": "PresetTool.rc - IDD_PANO_DIALOG - Dialog",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2024-06-11T12:47:36.995Z",
-              "EditorCaption": " - IDD_PANO_DIALOG - Dialog"
+              "WhenOpened": "2024-06-11T12:47:36.995Z"
             },
             {
               "$type": "Document",
@@ -86,8 +85,7 @@
               "ToolTip": "C:\\OSSTEM\\VersionControl\\PresetTool_Clone\\PresetTool.rc - IDD_CEPH_DIALOG - Dialog",
               "RelativeToolTip": "PresetTool.rc - IDD_CEPH_DIALOG - Dialog",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2024-06-11T12:47:25.513Z",
-              "EditorCaption": " - IDD_CEPH_DIALOG - Dialog"
+              "WhenOpened": "2024-06-11T12:47:25.513Z"
             }
           ]
         },
@@ -97,7 +95,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "MainTab.h",
               "DocumentMoniker": "C:\\OSSTEM\\VersionControl\\PresetTool_Clone\\MainTab.h",
               "RelativeDocumentMoniker": "MainTab.h",
@@ -105,8 +103,7 @@
               "RelativeToolTip": "MainTab.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-06-11T12:40:47.18Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-11T12:40:47.18Z"
             },
             {
               "$type": "Document",
@@ -116,14 +113,14 @@
               "RelativeDocumentMoniker": "MainTab.cpp",
               "ToolTip": "C:\\OSSTEM\\VersionControl\\PresetTool_Clone\\MainTab.cpp",
               "RelativeToolTip": "MainTab.cpp",
-              "ViewState": "AQIAACoAAAAAAAAAAAAAADoAAAA2AAAA",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAAEwAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-06-11T23:59:52.054Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "PresetTool.h",
               "DocumentMoniker": "C:\\OSSTEM\\VersionControl\\PresetTool_Clone\\PresetTool.h",
               "RelativeDocumentMoniker": "PresetTool.h",
@@ -131,12 +128,11 @@
               "RelativeToolTip": "PresetTool.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-06-11T23:58:45.387Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-11T23:58:45.387Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "PresetToolDlg.h",
               "DocumentMoniker": "C:\\OSSTEM\\VersionControl\\PresetTool_Clone\\PresetToolDlg.h",
               "RelativeDocumentMoniker": "PresetToolDlg.h",
@@ -144,8 +140,7 @@
               "RelativeToolTip": "PresetToolDlg.h",
               "ViewState": "AQIAAA8AAAAAAAAAAADwvzcAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-06-12T00:06:50.157Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-12T00:06:50.157Z"
             }
           ]
         }
