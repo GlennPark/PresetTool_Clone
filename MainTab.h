@@ -13,7 +13,10 @@ public:
 
 	CDialog *m_tabDialog[3];
 
+	//°¢ Tab Index
 	int m_tabIndex;
+
+	//Tab Dialog ÃÑ °³¼ö
 	int m_tabDialogNum;
 
 	int window_X, Window_Y;

@@ -7,6 +7,8 @@
 #include "afxdialogex.h"
 
 #include "resource.h"
+
+#include <string>
 IMPLEMENT_DYNAMIC(MainTab, CTabCtrl)
 
 BEGIN_MESSAGE_MAP(MainTab, CTabCtrl)
@@ -59,19 +61,28 @@ void MainTab::SetTabDialogRect()
 	double dMaxTabDialog_X = double(tabDialog_X) / double(2560);
 	double dMaxTabDialog_Y = double(tabDialog_Y) / double(1440);
 
-	RECT tabDialogRect;
-	::GetWindowRect(m_hWnd, &tabDialogRect);
-//	::MoveWindow(m_tabDialog[0], 0, 0, tabDialog_X, tabDialog_Y - 30 * dMaxTabDialog_Y, TRUE);
+	RECT tabDialogRect, tabItemRect;
 
-	m_tabDialog[0]->MoveWindow(0, 20, 2560, 1440);
+	//초기화 포함
+	GetWindowRect(&tabDialogRect);
+	GetItemRect(0, &tabItemRect);	
 
-	m_tabDialog[1]->MoveWindow(0, 20, 2560, 1440);
 
-	m_tabDialog[2]->MoveWindow(0, 20, 2560, 1440);
+	const int tabItemHeight = 10;
+	int tabItemLeft = tabItemRect.left;
+	int tabItemBottom = tabItemRect.bottom;
+	int tabDialogWidth = tabDialogRect.right - tabDialogRect.left;
+	int tabDialogHeight = tabDialogRect.bottom - tabItemBottom;
 
+
+	m_tabDialog[0]->SetWindowPos(&wndTop, tabItemLeft, (tabItemBottom + tabItemHeight) * dMaxTabDialog_Y, tabDialogWidth, tabDialogHeight, SWP_SHOWWINDOW);
 	
+	for (int nCount = 1; nCount < m_tabDialogNum; nCount++)
+	{
+		//nCount 출력
+		AfxMessageBox(_T("nCount : "));
 
+		m_tabDialog[nCount]->SetWindowPos(&wndTop, tabItemLeft, (tabItemBottom + tabItemHeight) * dMaxTabDialog_Y, tabDialogWidth, tabDialogHeight, SWP_HIDEWINDOW);
+	}
 
-
-	
 }
