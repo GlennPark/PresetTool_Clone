@@ -71,6 +71,8 @@ CPresetToolDlg::~CPresetToolDlg()
 		m_pAutoProxy->m_pDialog = nullptr;
 }
 
+
+
 void CPresetToolDlg::DoDataExchange(CDataExchange* pDX)
 {
 	CDialogEx::DoDataExchange(pDX);
@@ -124,21 +126,26 @@ BOOL CPresetToolDlg::OnInitDialog()
 
 	// TODO: 여기에 추가 초기화 작업을 추가합니다.
 
-	window_X = (int)GetSystemMetrics(SM_CXSCREEN);
-	window_Y = (int)GetSystemMetrics(SM_CYSCREEN);
-
-	dMax_X = double(window_X) / double(2560);
-	dMax_Y = double(window_Y) / double(1440);
-
-	RECT mainWindowRect;
-	::GetWindowRect(m_hWnd, &mainWindowRect);
-	::MoveWindow(m_hWnd, 0, 0, window_X, window_Y - 30 * dMax_Y, TRUE);
-	::MoveWindow(m_mainTab, 0, 0, window_X, window_Y - 30 * dMax_Y, TRUE);
+	setMainWindowRect();
 	
-		
 	m_mainTab.Init();
 	return TRUE;  // 포커스를 컨트롤에 설정하지 않으면 TRUE를 반환합니다.
 }
+
+void CPresetToolDlg::setMainWindowRect()
+{
+	int mainWindow_X = (int)GetSystemMetrics(SM_CXSCREEN);
+	int mainWindow_Y = (int)GetSystemMetrics(SM_CYSCREEN); 
+
+	double dMaxMainWindow_X = double(mainWindow_X) / double(2560);
+	double dMaxMainWindow_Y = double(mainWindow_Y) / double(1440);
+
+	RECT mainWindowRect;
+	::GetWindowRect(m_hWnd, &mainWindowRect);
+	::MoveWindow(m_hWnd, 0, 0, mainWindow_X, mainWindow_Y - 30 * dMaxMainWindow_Y, TRUE);
+	::MoveWindow(m_mainTab, 0, 0, mainWindow_X, mainWindow_Y - 30 * dMaxMainWindow_Y, TRUE);
+}
+
 
 void CPresetToolDlg::OnSysCommand(UINT nID, LPARAM lParam)
 {

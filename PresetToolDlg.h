@@ -23,16 +23,18 @@ public:
 	CPresetToolDlg(CWnd* pParent = nullptr);	// 표준 생성자입니다.
 	virtual ~CPresetToolDlg();
 
-	
-
 	// 창 크기 설정
-	int window_X, window_Y = 0;
-
+//	int mainWindow_X, mainWindow_Y = 0;
 	// 창 최대 크기 설정
-	double dMax_X, dMax_Y = 0;
+//	double dMax_X, dMax_Y = 0;
 
+	// Tab Class 호출
 	MainTab m_mainTab;
 	
+public:
+	void setMainWindowRect();
+
+
 // 대화 상자 데이터입니다.
 #ifdef AFX_DESIGN_TIME
 	enum { IDD = IDD_PRESETTOOL_DIALOG };

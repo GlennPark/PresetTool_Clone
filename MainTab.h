@@ -22,7 +22,7 @@ public:
 
 public:
 	void Init();
-
+	void SetTabDialogRect();
 
 protected:
 		DECLARE_MESSAGE_MAP()
