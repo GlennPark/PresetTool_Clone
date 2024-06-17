@@ -14,7 +14,7 @@ public:
 	CDialog *m_tabDialog[3];
 
 	//°¢ Tab Index
-	int m_tabIndex;
+	int m_tabCurrentIndex;
 
 	//Tab Dialog ÃÑ °³¼ö
 	int m_tabDialogNum;
@@ -32,5 +32,7 @@ protected:
 private:
 
 	
+public:
+	afx_msg void OnLButtonDown(UINT nFlags, CPoint point);
 };
 

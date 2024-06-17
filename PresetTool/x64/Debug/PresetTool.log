@@ -1,8 +1,21 @@
-﻿  MainTab.cpp
-C:\OSSTEM\VersionControl\PresetTool_Clone\MainTab.cpp(78,85): warning C4244: '인수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+﻿  CTDlg.cpp
+  CephDlg.cpp
+  DlgProxy.cpp
+  MainTab.cpp
+  PanoDlg.cpp
+  PresetTool.cpp
+  PresetToolDlg.cpp
+  코드를 생성하고 있습니다...
+C:\OSSTEM\VersionControl\PresetTool_Clone\MainTab.cpp(79,85): warning C4244: '인수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   (소스 파일 '/MainTab.cpp'을(를) 컴파일하는 중)
   
-C:\OSSTEM\VersionControl\PresetTool_Clone\MainTab.cpp(85,91): warning C4244: '인수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\OSSTEM\VersionControl\PresetTool_Clone\MainTab.cpp(87,91): warning C4244: '인수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   (소스 파일 '/MainTab.cpp'을(를) 컴파일하는 중)
+  
+C:\OSSTEM\VersionControl\PresetTool_Clone\PresetToolDlg.cpp(145,56): warning C4244: '인수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/PresetToolDlg.cpp'을(를) 컴파일하는 중)
+  
+C:\OSSTEM\VersionControl\PresetTool_Clone\PresetToolDlg.cpp(146,59): warning C4244: '인수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  (소스 파일 '/PresetToolDlg.cpp'을(를) 컴파일하는 중)
   
   PresetTool.vcxproj -> C:\OSSTEM\VersionControl\PresetTool_Clone\x64\Debug\PresetTool.exe

@@ -14,6 +14,7 @@ IMPLEMENT_DYNAMIC(MainTab, CTabCtrl)
 BEGIN_MESSAGE_MAP(MainTab, CTabCtrl)
 	ON_WM_LBUTTONDOWN()
 	ON_WM_ERASEBKGND()
+	ON_WM_LBUTTONDOWN()
 END_MESSAGE_MAP()
 
 
@@ -77,6 +78,7 @@ void MainTab::SetTabDialogRect()
 	//우측 방향에서 Dialog 크기가 줄어들 때 탭 크기도 줄어들도록 변경 필요
 	m_tabDialog[0]->SetWindowPos(&wndTop, tabItemLeft, (tabItemBottom + tabItemHeight) * dMaxTabDialog_Y, tabDialogWidth, tabDialogHeight, SWP_SHOWWINDOW);
 	
+
 	for (int nCount = 1; nCount < m_tabDialogNum; nCount++)
 	{
 		//nCount 출력
@@ -85,4 +87,20 @@ void MainTab::SetTabDialogRect()
 		m_tabDialog[nCount]->SetWindowPos(&wndTop, tabItemLeft, (tabItemBottom + tabItemHeight) * dMaxTabDialog_Y, tabDialogWidth, tabDialogHeight, SWP_HIDEWINDOW);
 	}
 
+}
+
+
+void MainTab::OnLButtonDown(UINT nFlags, CPoint point)
+{
+	// TODO: 여기에 메시지 처리기 코드를 추가 및/또는 기본값을 호출합니다.
+
+	CTabCtrl::OnLButtonDown(nFlags, point);
+
+	if (m_tabCurrentIndex != GetCurFocus())
+	{
+		m_tabDialog[m_tabCurrentIndex]->ShowWindow(SW_HIDE);
+		m_tabCurrentIndex = GetCurFocus();
+		m_tabDialog[m_tabCurrentIndex]->ShowWindow(SW_SHOW);
+		m_tabDialog[m_tabCurrentIndex]->SetFocus();
+	}
 }
