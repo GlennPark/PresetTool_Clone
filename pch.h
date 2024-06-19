@@ -8,6 +8,20 @@
 #define PCH_H
 
 // 여기에 미리 컴파일하려는 헤더 추가
+//#include "PresetTool.h"
+//#include "PresetToolDlg.h"
+
+#include "MainTab.h"
+#include "CTDlg.h"
+#include "CephDlg.h"
+#include "PanoDlg.h"
+
 #include "framework.h"
+#include "DlgProxy.h"
+#include "resource.h"
+#include "targetver.h"
+
+#include "afxdialogex.h"
+#include <afxcmn.h>
 
 #endif //PCH_H

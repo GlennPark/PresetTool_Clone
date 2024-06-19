@@ -3,11 +3,14 @@
 //
 
 #include "pch.h"
-#include "framework.h"
-#include "PresetTool.h"
+
+//#include "PresetTool.h"
 #include "PresetToolDlg.h"
-#include "DlgProxy.h"
-#include "afxdialogex.h"
+
+//2024.06.19 pch 적용을 위한 기타 헤더 비활성화
+// #include "framework.h"
+// #include "DlgProxy.h"
+// #include "afxdialogex.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW

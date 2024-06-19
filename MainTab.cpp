@@ -1,20 +1,22 @@
 #include "pch.h"
 #include "MainTab.h"
-#include "PanoDlg.h"
-#include "CephDlg.h"
-#include "CTDlg.h"
-#include "framework.h"
-#include "afxdialogex.h"
 
-#include "resource.h"
+//2024.06.19 pch 적용을 위한 기타 헤더 비활성화
+//#include "PanoDlg.h"
+//#include "CephDlg.h"
+//#include "CTDlg.h"
+//#include "framework.h"
+//#include "afxdialogex.h"
+//#include "resource.h"
+//#include <string>
 
-#include <string>
 IMPLEMENT_DYNAMIC(MainTab, CTabCtrl)
 
 BEGIN_MESSAGE_MAP(MainTab, CTabCtrl)
 	ON_WM_LBUTTONDOWN()
 	ON_WM_ERASEBKGND()
 	ON_WM_LBUTTONDOWN()
+	ON_WM_ERASEBKGND()
 END_MESSAGE_MAP()
 
 
@@ -51,6 +53,7 @@ void MainTab::Init()
 	m_tabDialog[2]->ShowWindow(SW_HIDE);
 
 	SetTabDialogRect();
+
 
 }
 
@@ -103,4 +106,31 @@ void MainTab::OnLButtonDown(UINT nFlags, CPoint point)
 		m_tabDialog[m_tabCurrentIndex]->ShowWindow(SW_SHOW);
 		m_tabDialog[m_tabCurrentIndex]->SetFocus();
 	}
+}
+
+
+BOOL MainTab::OnEraseBkgnd(CDC* pDC)
+{
+	// TODO: 여기에 메시지 처리기 코드를 추가 및/또는 기본값을 호출합니다.
+
+	return CTabCtrl::OnEraseBkgnd(pDC);
+
+	//CRect rect; GetClientRect(&rect);
+	//CBrush myBrush(RGB(255, 255, 0)); // dialog background color <- 요기 바꾸면 됨.
+	//COLORREF color_data = RGB(0, 0, 255);
+	//CBrush* pOld = pDC->SelectObject(&myBrush);
+	//BOOL bRes = pDC->PatBlt(0, 0, rect.Width(), rect.Height(), PATCOPY);
+	//pDC->SelectObject(pOld); // restore old brush 
+	//return bRes; // return CTabCtrl::OnEraseBkgnd(pDC);
+
+}
+
+// 탭컨트롤 가로 설정 가상함수 찾아보기
+void MainTab::DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct)
+{
+
+	// TODO:  지정된 항목을 그리는 코드를 추가합니다.
+
+
+
 }

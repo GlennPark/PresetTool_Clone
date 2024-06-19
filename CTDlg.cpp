@@ -2,11 +2,11 @@
 //
 
 #include "pch.h"
-#include "PresetTool.h"
-#include "afxdialogex.h"
 #include "CTDlg.h"
 
-
+//2024.06.19 pch 적용을 위한 기타 헤더 비활성화
+// #include "PresetTool.h"
+// #include "afxdialogex.h"
 // CTDlg 대화 상자
 
 IMPLEMENT_DYNAMIC(CTDlg, CDialogEx)

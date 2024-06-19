@@ -34,5 +34,7 @@ private:
 	
 public:
 	afx_msg void OnLButtonDown(UINT nFlags, CPoint point);
+	afx_msg BOOL OnEraseBkgnd(CDC* pDC);
+	virtual void DrawItem(LPDRAWITEMSTRUCT /*lpDrawItemStruct*/);
 };
 
