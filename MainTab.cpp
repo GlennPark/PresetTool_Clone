@@ -33,9 +33,9 @@ MainTab::~MainTab()
 
 void MainTab::Init()
 {
-	this->InsertItem(0, _T("       Pano       "));
-	this->InsertItem(1, _T("       Ceph       "));
-	this->InsertItem(2, _T("        CT        "));
+	this->InsertItem(0, _T("       PANORAMA       "));
+	this->InsertItem(1, _T("       CT       "));
+	this->InsertItem(2, _T("       CEPHALO       "));
 
 	m_tabDialog[0] = new PanoDlg;
 	m_tabDialog[1] = new CephDlg;
@@ -45,8 +45,8 @@ void MainTab::Init()
 
 	//Dlg 처음 호출 시 탭 상태 설정
 	m_tabDialog[0]->Create(IDD_PANO_DIALOG, this);
-	m_tabDialog[1]->Create(IDD_CEPH_DIALOG, this);
-	m_tabDialog[2]->Create(IDD_CT_DIALOG, this);
+	m_tabDialog[1]->Create(IDD_CT_DIALOG, this);
+	m_tabDialog[2]->Create(IDD_CEPH_DIALOG, this);
 	
 	m_tabDialog[0]->ShowWindow(SW_SHOW);
 	m_tabDialog[1]->ShowWindow(SW_HIDE);
@@ -84,9 +84,6 @@ void MainTab::SetTabDialogRect()
 
 	for (int nCount = 1; nCount < m_tabDialogNum; nCount++)
 	{
-		//nCount 출력
-		AfxMessageBox(_T("nCount : "));
-
 		m_tabDialog[nCount]->SetWindowPos(&wndTop, tabItemLeft, (tabItemBottom + tabItemHeight) * dMaxTabDialog_Y, tabDialogWidth, tabDialogHeight, SWP_HIDEWINDOW);
 	}
 
