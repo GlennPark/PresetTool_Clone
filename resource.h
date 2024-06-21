@@ -41,12 +41,18 @@
 #define IDC_PANO_SAMPLE_LOAD_BUTTON     1019
 #define IDC_CEPH_SW_VERSION_STATIC      1019
 #define IDC_CT_RECENT_LOAD_BUTTON       1020
+#define IDC_CEPH_APPLY_BUTTON           1020
 #define IDC_CT_PAST_LOAD_BUTTON         1021
+#define IDC_CEPH_SAVE_BUTTON            1021
 #define IDC_CT_SAMPLE_LOAD_BUTTON       1022
+#define IDC_CEPH_EXIT_BUTTON            1022
 #define IDC_PANO_PROGRESS               1023
+#define IDC_CT_APPLY_BUTTON             1023
 #define IDC_CEPH_PROGRESS               1024
+#define IDC_CT_SAVE_BUTTON              1024
 #define IDC_CT_PROGRESS                 1025
 #define IDC_CEPH_PRESET1_BUTTON         1026
+#define IDC_CT_EXIT_BUTTON              1026
 #define IDC_CEPH_PRESET_GROUPBOX        1027
 #define IDC_CT_PRESET_GROUPBOX          1028
 #define IDC_CEPH_PRESET2_BUTTON         1028
@@ -86,6 +92,51 @@
 #define IDC_PANO_PRESET1_BUTTON         1051
 #define IDC_PANO_PRESET2_BUTTON         1052
 #define IDC_CEPH_COPYRIGHT_STATIC       1053
+#define IDC_CEPH_CLAHE_SLIDER           1055
+#define IDC_CEPH_UNSHARP_SLIDER         1056
+#define IDC_CEPH_MEDIAN_SLIDER          1057
+#define IDC_CEPH_CLAHE_EDIT             1058
+#define IDC_CEPH_UNSHARP_EDIT           1059
+#define IDC_CEPH_MEDIAN_EDIT            1060
+#define IDC_CEPH_CLAHE_STATIC           1061
+#define IDC_CEPH_UNSHARP_STATIC         1062
+#define IDC_CEPH_MEDIAN_STATIC          1063
+#define IDC_CEPH_CLAHE_SPIN             1064
+#define IDC_CEPH_UNSHARP_SPIN           1065
+#define IDC_CEPH_MEDIAN_SPIN            1066
+#define IDC_CEPH_EFFECT_STATIC          1068
+#define IDC_CEPH_CONTROLLER_STATIC      1069
+#define IDC_CT_EFFECT_STATIC            1071
+#define IDC_CT_CLAHE_STATIC             1072
+#define IDC_CT_UNSHARP_STATIC           1073
+#define IDC_CT_MEDIAN_STATIC            1074
+#define IDC_CT_CLAHE_SLIDER             1075
+#define IDC_CT_CLAHE_EDIT               1076
+#define IDC_CT_CLAHE_SPIN               1077
+#define IDC_CT_UNSHARP_SLIDER           1078
+#define IDC_CT_UNSHARP_EDIT             1079
+#define IDC_CT_UNSHARP_SPIN             1080
+#define IDC_CT_MEDIAN_SLIDER            1081
+#define IDC_CT_MEDIAN_EDIT              1082
+#define IDC_CT_MEDIAN_SPIN              1083
+#define IDC_CT_CONTROLLER_STATIC        1084
+#define IDC_PANO_CLAHE_STATIC           1085
+#define IDC_PANO_CLAHE_SLIDER           1086
+#define IDC_PANO_CLAHE_EDIT             1087
+#define IDC_PANO_CLAHE_SPIN             1088
+#define IDC_PANO_EFFECT_STATIC          1089
+#define IDC_PANO_UNSHARP_STATIC         1090
+#define IDC_PANO_UNSHARP_SLIDER         1091
+#define IDC_PANO_UNSHARP_EDIT           1092
+#define IDC_PANO_UNSHARP_SPIN           1093
+#define IDC_PANO_MEDIAN_STATIC          1094
+#define IDC_PANO_MEDIAN_SLIDER          1095
+#define IDC_PANO_MEDIAN_EDIT            1096
+#define IDC_PANO_MEDIAN_SPIN            1097
+#define IDC_PANO_CONTROLLER_STATIC      1098
+#define IDC_PANO_APPLY_BUTTON           1099
+#define IDC_PANO_SAVE_BUTTON            1100
+#define IDC_PANO_EXIT_BUTTON            1101
 
 // Next default values for new objects
 // 
@@ -93,7 +144,7 @@
 #ifndef APSTUDIO_READONLY_SYMBOLS
 #define _APS_NEXT_RESOURCE_VALUE        136
 #define _APS_NEXT_COMMAND_VALUE         32771
-#define _APS_NEXT_CONTROL_VALUE         1054
+#define _APS_NEXT_CONTROL_VALUE         1102
 #define _APS_NEXT_SYMED_VALUE           101
 #endif
 #endif
