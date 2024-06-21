@@ -138,6 +138,18 @@
 #define IDC_PANO_SAVE_BUTTON            1100
 #define IDC_PANO_EXIT_BUTTON            1101
 #define IDC_PANO_CLAHE_EDIT2            1102
+#define IDC_PANO_ALPHA_BUTTON           1102
+#define IDC_PANO_BETA_BUTTON            1103
+#define IDC_CEPH_ALPHA_BUTTON           1104
+#define IDC_CEPH_BETA_BUTTON            1105
+#define IDC_CT_ALPHA_BUTTON             1106
+#define IDC_CT_BETA_BUTTON              1107
+#define IDC_PANO_REMOVEA_BUTTON         1108
+#define IDC_PANO_REMOVEB_BUTTON         1109
+#define IDC_CT_REMOVEB_BUTTON           1110
+#define IDC_CT_REMOVEA_BUTTON           1111
+#define IDC_CEPH_REMOVEA_BUTTON         1112
+#define IDC_CEPH_REMOVEB_BUTTON         1113
 
 // Next default values for new objects
 // 
@@ -145,7 +157,7 @@
 #ifndef APSTUDIO_READONLY_SYMBOLS
 #define _APS_NEXT_RESOURCE_VALUE        136
 #define _APS_NEXT_COMMAND_VALUE         32771
-#define _APS_NEXT_CONTROL_VALUE         1102
+#define _APS_NEXT_CONTROL_VALUE         1114
 #define _APS_NEXT_SYMED_VALUE           101
 #endif
 #endif
