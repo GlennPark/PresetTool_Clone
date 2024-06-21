@@ -137,6 +137,7 @@
 #define IDC_PANO_APPLY_BUTTON           1099
 #define IDC_PANO_SAVE_BUTTON            1100
 #define IDC_PANO_EXIT_BUTTON            1101
+#define IDC_PANO_CLAHE_EDIT2            1102
 
 // Next default values for new objects
 // 
