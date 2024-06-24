@@ -1,5 +1,6 @@
 ﻿#pragma once
 #include "afxdialogex.h"
+#include "atlimage.h"
 
 
 // PanoDlg 대화 상자
@@ -16,9 +17,16 @@ public:
 #ifdef AFX_DESIGN_TIME
 	enum { IDD = IDD_PANO_DIALOG };
 #endif
-
+	CImage m_image;
 protected:
 	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV 지원입니다.
-
+	void OnDrawImage();
 	DECLARE_MESSAGE_MAP()
+public:
+	afx_msg void OnBnClickedPanoRecentLoadButton();
+	afx_msg void OnBnClickedPanoSampleLoadButton();
+	afx_msg void OnPaint();
+
+
+
 };

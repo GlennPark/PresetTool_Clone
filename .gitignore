@@ -32,4 +32,14 @@
 *.app
 
 # Visual C++ cache files
+<<<<<<< HEAD
 ipch/
+
+# IntelliSence
+*.VC.db
+.vs/PresetTool_Clone/v17/Browse.VC.db
+=======
+ipch/
+>>>>>>> parent of 094be0d (Activate min size dialog)
+.vs/PresetTool_Clone/v17/Browse.VC.db
+.vs/PresetTool/v17/Browse.VC.db

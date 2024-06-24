@@ -88,6 +88,8 @@ BEGIN_MESSAGE_MAP(CPresetToolDlg, CDialogEx)
 	ON_WM_CLOSE()
 	ON_WM_PAINT()
 	ON_WM_QUERYDRAGICON()
+	ON_WM_SIZE()
+	ON_WM_GETMINMAXINFO()
 END_MESSAGE_MAP()
 
 
@@ -211,6 +213,16 @@ void CPresetToolDlg::OnClose()
 		CDialogEx::OnClose();
 }
 
+void CPresetToolDlg::OnGetMinMaxInfo(MINMAXINFO* lpMMI)
+{   
+	// Specify the minimum tracking width and height
+	lpMMI->ptMinTrackSize.x = 800;  // Minimum width
+	lpMMI->ptMinTrackSize.y = 600;  // Minimum height
+
+	CDialogEx::OnGetMinMaxInfo(lpMMI);
+
+}
+
 void CPresetToolDlg::OnOK()
 {
 	if (CanExit())
@@ -237,3 +249,13 @@ BOOL CPresetToolDlg::CanExit()
 	return TRUE;
 }
 
+
+
+void CPresetToolDlg::OnSize(UINT nType, int cx, int cy)
+{
+	CDialogEx::OnSize(nType, cx, cy);
+	CRect tabDialogRect;
+	this->GetWindowRect(&tabDialogRect);
+
+	// TODO: 여기에 메시지 처리기 코드를 추가합니다.
+}
