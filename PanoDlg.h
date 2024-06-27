@@ -19,14 +19,17 @@ public:
 #endif
 	CImage m_image;
 protected:
-	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV 지원입니다.
+	virtual void DoDataExchange(CDataExchange* pDX);
+	void sampleData_Load_ImgView(CString path_name);
+	// DDX/DDV 지원입니다.
 	void OnDrawImage();
 	DECLARE_MESSAGE_MAP()
 public:
 	afx_msg void OnBnClickedPanoRecentLoadButton();
 	afx_msg void OnBnClickedPanoSampleLoadButton();
+	afx_msg void OnSize(UINT nType, int cx, int cy);
 	afx_msg void OnPaint();
-
+	void resize();
 
 
 };

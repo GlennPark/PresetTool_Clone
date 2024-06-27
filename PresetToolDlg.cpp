@@ -257,5 +257,6 @@ void CPresetToolDlg::OnSize(UINT nType, int cx, int cy)
 	CRect tabDialogRect;
 	this->GetWindowRect(&tabDialogRect);
 
+
 	// TODO: 여기에 메시지 처리기 코드를 추가합니다.
 }

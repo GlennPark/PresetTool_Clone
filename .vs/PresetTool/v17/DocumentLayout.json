@@ -7,14 +7,6 @@
       "RelativeMoniker": "D:0:0:{7FAE6A0E-9EF6-47E2-B3F5-0ECCCCDCBBA1}|PresetTool.vcxproj|solutionrelative:PanoDlg.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FAE6A0E-9EF6-47E2-B3F5-0ECCCCDCBBA1}|PresetTool.vcxproj|C:\\Osstem\\VersionControl\\PresetTool_Clone\\PanoDlg.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7FAE6A0E-9EF6-47E2-B3F5-0ECCCCDCBBA1}|PresetTool.vcxproj|solutionrelative:PanoDlg.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FAE6A0E-9EF6-47E2-B3F5-0ECCCCDCBBA1}|PresetTool.vcxproj|C:\\Osstem\\VersionControl\\PresetTool_Clone\\PresetTool.rc||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n       % \u00A2 2$  \u0022     ",
-      "RelativeMoniker": "D:0:0:{7FAE6A0E-9EF6-47E2-B3F5-0ECCCCDCBBA1}|PresetTool.vcxproj|solutionrelative:PresetTool.rc||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n       % \u00A2 2$  \u0022     "
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7FAE6A0E-9EF6-47E2-B3F5-0ECCCCDCBBA1}|PresetTool.vcxproj|C:\\Osstem\\VersionControl\\PresetTool_Clone\\PresetToolDlg.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{7FAE6A0E-9EF6-47E2-B3F5-0ECCCCDCBBA1}|PresetTool.vcxproj|solutionrelative:PresetToolDlg.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -27,12 +19,24 @@
       "RelativeMoniker": "D:0:0:{7FAE6A0E-9EF6-47E2-B3F5-0ECCCCDCBBA1}|PresetTool.vcxproj|solutionrelative:PresetTool.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7FAE6A0E-9EF6-47E2-B3F5-0ECCCCDCBBA1}|PresetTool.vcxproj|C:\\Osstem\\VersionControl\\PresetTool_Clone\\MainTab.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7FAE6A0E-9EF6-47E2-B3F5-0ECCCCDCBBA1}|PresetTool.vcxproj|solutionrelative:MainTab.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7FAE6A0E-9EF6-47E2-B3F5-0ECCCCDCBBA1}|PresetTool.vcxproj|C:\\Osstem\\VersionControl\\PresetTool_Clone\\MainTab.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{7FAE6A0E-9EF6-47E2-B3F5-0ECCCCDCBBA1}|PresetTool.vcxproj|solutionrelative:MainTab.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FAE6A0E-9EF6-47E2-B3F5-0ECCCCDCBBA1}|PresetTool.vcxproj|C:\\Osstem\\VersionControl\\PresetTool_Clone\\PanoDlg.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7FAE6A0E-9EF6-47E2-B3F5-0ECCCCDCBBA1}|PresetTool.vcxproj|solutionrelative:PanoDlg.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FAE6A0E-9EF6-47E2-B3F5-0ECCCCDCBBA1}|PresetTool.vcxproj|C:\\Osstem\\VersionControl\\PresetTool_Clone\\pch.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7FAE6A0E-9EF6-47E2-B3F5-0ECCCCDCBBA1}|PresetTool.vcxproj|solutionrelative:pch.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FAE6A0E-9EF6-47E2-B3F5-0ECCCCDCBBA1}|PresetTool.vcxproj|C:\\Osstem\\VersionControl\\PresetTool_Clone\\PresetTool.rc||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n       % \u00A2 2$  \u0022     ",
+      "RelativeMoniker": "D:0:0:{7FAE6A0E-9EF6-47E2-B3F5-0ECCCCDCBBA1}|PresetTool.vcxproj|solutionrelative:PresetTool.rc||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n       % \u00A2 2$  \u0022     "
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FAE6A0E-9EF6-47E2-B3F5-0ECCCCDCBBA1}|PresetTool.vcxproj|C:\\Osstem\\VersionControl\\PresetTool_Clone\\PresetTool.rc||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n       % \u0086 2$  \u0022     ",
+      "RelativeMoniker": "D:0:0:{7FAE6A0E-9EF6-47E2-B3F5-0ECCCCDCBBA1}|PresetTool.vcxproj|solutionrelative:PresetTool.rc||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n       % \u0086 2$  \u0022     "
     },
     {
       "AbsoluteMoniker": "D:0:0:{7FAE6A0E-9EF6-47E2-B3F5-0ECCCCDCBBA1}|PresetTool.vcxproj|C:\\Osstem\\VersionControl\\PresetTool_Clone\\PresetTool.rc||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n       % \u00A4 2$  \u0022     ",
@@ -41,10 +45,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{7FAE6A0E-9EF6-47E2-B3F5-0ECCCCDCBBA1}|PresetTool.vcxproj|C:\\Osstem\\VersionControl\\PresetTool_Clone\\PresetTool.idl||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{7FAE6A0E-9EF6-47E2-B3F5-0ECCCCDCBBA1}|PresetTool.vcxproj|solutionrelative:PresetTool.idl||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FAE6A0E-9EF6-47E2-B3F5-0ECCCCDCBBA1}|PresetTool.vcxproj|C:\\Osstem\\VersionControl\\PresetTool_Clone\\pch.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7FAE6A0E-9EF6-47E2-B3F5-0ECCCCDCBBA1}|PresetTool.vcxproj|solutionrelative:pch.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7FAE6A0E-9EF6-47E2-B3F5-0ECCCCDCBBA1}|PresetTool.vcxproj|C:\\Osstem\\VersionControl\\PresetTool_Clone\\CustomButton.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -57,10 +57,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{7FAE6A0E-9EF6-47E2-B3F5-0ECCCCDCBBA1}|PresetTool.vcxproj|C:\\Osstem\\VersionControl\\PresetTool_Clone\\CephDlg.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{7FAE6A0E-9EF6-47E2-B3F5-0ECCCCDCBBA1}|PresetTool.vcxproj|solutionrelative:CephDlg.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7FAE6A0E-9EF6-47E2-B3F5-0ECCCCDCBBA1}|PresetTool.vcxproj|C:\\Osstem\\VersionControl\\PresetTool_Clone\\PresetTool.rc||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n       % \u0086 2$  \u0022     ",
-      "RelativeMoniker": "D:0:0:{7FAE6A0E-9EF6-47E2-B3F5-0ECCCCDCBBA1}|PresetTool.vcxproj|solutionrelative:PresetTool.rc||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n       % \u0086 2$  \u0022     "
     },
     {
       "AbsoluteMoniker": "D:0:0:{7FAE6A0E-9EF6-47E2-B3F5-0ECCCCDCBBA1}|PresetTool.vcxproj|C:\\Osstem\\VersionControl\\PresetTool_Clone\\PresetTool.rc||{177559E0-D141-11D0-92DF-00A0C9138C45}|,   b e g i n       % \u00A3 2$  \u0022     ",
@@ -97,7 +93,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 195,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -105,20 +101,45 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PanoDlg.h",
-              "DocumentMoniker": "C:\\Osstem\\VersionControl\\PresetTool_Clone\\PanoDlg.h",
-              "RelativeDocumentMoniker": "PanoDlg.h",
-              "ToolTip": "C:\\Osstem\\VersionControl\\PresetTool_Clone\\PanoDlg.h",
-              "RelativeToolTip": "PanoDlg.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-06-21T12:41:44.849Z",
+              "DocumentIndex": 0,
+              "Title": "PanoDlg.cpp",
+              "DocumentMoniker": "C:\\Osstem\\VersionControl\\PresetTool_Clone\\PanoDlg.cpp",
+              "RelativeDocumentMoniker": "PanoDlg.cpp",
+              "ToolTip": "C:\\Osstem\\VersionControl\\PresetTool_Clone\\PanoDlg.cpp",
+              "RelativeToolTip": "PanoDlg.cpp",
+              "ViewState": "AQIAAJQAAAAAAAAAAAAnwKcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-06-18T00:32:34.666Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "PresetToolDlg.cpp",
+              "DocumentMoniker": "C:\\Osstem\\VersionControl\\PresetTool_Clone\\PresetToolDlg.cpp",
+              "RelativeDocumentMoniker": "PresetToolDlg.cpp",
+              "ToolTip": "C:\\Osstem\\VersionControl\\PresetTool_Clone\\PresetToolDlg.cpp",
+              "RelativeToolTip": "PresetToolDlg.cpp",
+              "ViewState": "AQIAAOwAAAAAAAAAAADwvwEBAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-06-12T00:06:42.316Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PresetTool.rc - IDD_PRESETTOOL_DIALOG - Dialog",
+              "DocumentMoniker": "C:\\Osstem\\VersionControl\\PresetTool_Clone\\PresetTool.rc",
+              "RelativeDocumentMoniker": "PresetTool.rc",
+              "ToolTip": "C:\\Osstem\\VersionControl\\PresetTool_Clone\\PresetTool.rc - IDD_PRESETTOOL_DIALOG - Dialog",
+              "RelativeToolTip": "PresetTool.rc - IDD_PRESETTOOL_DIALOG - Dialog",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-06-21T11:20:01.687Z",
+              "EditorCaption": " - IDD_PRESETTOOL_DIALOG - Dialog"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "PresetTool.rc - IDD_PANO_DIALOG - Dialog",
               "DocumentMoniker": "C:\\Osstem\\VersionControl\\PresetTool_Clone\\PresetTool.rc",
               "RelativeDocumentMoniker": "PresetTool.rc",
@@ -130,110 +151,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "PresetToolDlg.h",
               "DocumentMoniker": "C:\\Osstem\\VersionControl\\PresetTool_Clone\\PresetToolDlg.h",
               "RelativeDocumentMoniker": "PresetToolDlg.h",
               "ToolTip": "C:\\Osstem\\VersionControl\\PresetTool_Clone\\PresetToolDlg.h",
               "RelativeToolTip": "PresetToolDlg.h",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAACAAAAABAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAADwvxYAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-06-21T11:32:22.685Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "MainTab.cpp",
-              "DocumentMoniker": "C:\\Osstem\\VersionControl\\PresetTool_Clone\\MainTab.cpp",
-              "RelativeDocumentMoniker": "MainTab.cpp",
-              "ToolTip": "C:\\Osstem\\VersionControl\\PresetTool_Clone\\MainTab.cpp",
-              "RelativeToolTip": "MainTab.cpp",
-              "ViewState": "AQIAABUAAAAAAAAAAAAqwFAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-06-21T11:20:41.827Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PanoDlg.cpp",
-              "DocumentMoniker": "C:\\Osstem\\VersionControl\\PresetTool_Clone\\PanoDlg.cpp",
-              "RelativeDocumentMoniker": "PanoDlg.cpp",
-              "ToolTip": "C:\\Osstem\\VersionControl\\PresetTool_Clone\\PanoDlg.cpp",
-              "RelativeToolTip": "PanoDlg.cpp",
-              "ViewState": "AQIAAEUAAAAAAAAAAAAEwFgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-06-18T00:32:34.666Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PresetToolDlg.cpp",
-              "DocumentMoniker": "C:\\Osstem\\VersionControl\\PresetTool_Clone\\PresetToolDlg.cpp",
-              "RelativeDocumentMoniker": "PresetToolDlg.cpp",
-              "ToolTip": "C:\\Osstem\\VersionControl\\PresetTool_Clone\\PresetToolDlg.cpp",
-              "RelativeToolTip": "PresetToolDlg.cpp",
-              "ViewState": "AQIAACgAAAAAAAAAAAAEwDkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-06-12T00:06:42.316Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "MainTab.h",
-              "DocumentMoniker": "C:\\Osstem\\VersionControl\\PresetTool_Clone\\MainTab.h",
-              "RelativeDocumentMoniker": "MainTab.h",
-              "ToolTip": "C:\\Osstem\\VersionControl\\PresetTool_Clone\\MainTab.h",
-              "RelativeToolTip": "MainTab.h",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-06-21T12:41:27.183Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PresetTool.cpp",
-              "DocumentMoniker": "C:\\Osstem\\VersionControl\\PresetTool_Clone\\PresetTool.cpp",
-              "RelativeDocumentMoniker": "PresetTool.cpp",
-              "ToolTip": "C:\\Osstem\\VersionControl\\PresetTool_Clone\\PresetTool.cpp",
-              "RelativeToolTip": "PresetTool.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-06-21T11:19:47.171Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "PresetTool.rc - IDD_CT_DIALOG - Dialog",
-              "DocumentMoniker": "C:\\Osstem\\VersionControl\\PresetTool_Clone\\PresetTool.rc",
-              "RelativeDocumentMoniker": "PresetTool.rc",
-              "ToolTip": "C:\\Osstem\\VersionControl\\PresetTool_Clone\\PresetTool.rc - IDD_CT_DIALOG - Dialog",
-              "RelativeToolTip": "PresetTool.rc - IDD_CT_DIALOG - Dialog",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2024-06-21T11:36:31.596Z",
-              "EditorCaption": " - IDD_CT_DIALOG - Dialog"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "PresetTool.idl",
-              "DocumentMoniker": "C:\\Osstem\\VersionControl\\PresetTool_Clone\\PresetTool.idl",
-              "RelativeDocumentMoniker": "PresetTool.idl",
-              "ToolTip": "C:\\Osstem\\VersionControl\\PresetTool_Clone\\PresetTool.idl",
-              "RelativeToolTip": "PresetTool.idl",
-              "ViewState": "AQIAAAYAAAAAAAAAAADwvxEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000564|",
-              "WhenOpened": "2024-06-19T06:08:06.748Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
               "Title": "pch.cpp",
               "DocumentMoniker": "C:\\Osstem\\VersionControl\\PresetTool_Clone\\pch.cpp",
               "RelativeDocumentMoniker": "pch.cpp",
@@ -246,6 +177,68 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainTab.cpp",
+              "DocumentMoniker": "C:\\Osstem\\VersionControl\\PresetTool_Clone\\MainTab.cpp",
+              "RelativeDocumentMoniker": "MainTab.cpp",
+              "ToolTip": "C:\\Osstem\\VersionControl\\PresetTool_Clone\\MainTab.cpp",
+              "RelativeToolTip": "MainTab.cpp",
+              "ViewState": "AQIAAF8AAAAAAAAAAADwv2YAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-06-21T11:20:41.827Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PanoDlg.h",
+              "DocumentMoniker": "C:\\Osstem\\VersionControl\\PresetTool_Clone\\PanoDlg.h",
+              "RelativeDocumentMoniker": "PanoDlg.h",
+              "ToolTip": "C:\\Osstem\\VersionControl\\PresetTool_Clone\\PanoDlg.h",
+              "RelativeToolTip": "PanoDlg.h",
+              "ViewState": "AQIAAA0AAAAAAAAAAADwvx8AAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-06-26T12:44:13.805Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PresetTool.cpp",
+              "DocumentMoniker": "C:\\Osstem\\VersionControl\\PresetTool_Clone\\PresetTool.cpp",
+              "RelativeDocumentMoniker": "PresetTool.cpp",
+              "ToolTip": "C:\\Osstem\\VersionControl\\PresetTool_Clone\\PresetTool.cpp",
+              "RelativeToolTip": "PresetTool.cpp",
+              "ViewState": "AQIAAG4AAAAAAAAAAAAnwHwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-06-21T11:19:47.171Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PresetTool.rc - IDD_CT_DIALOG - Dialog",
+              "DocumentMoniker": "C:\\Osstem\\VersionControl\\PresetTool_Clone\\PresetTool.rc",
+              "RelativeDocumentMoniker": "PresetTool.rc",
+              "ToolTip": "C:\\Osstem\\VersionControl\\PresetTool_Clone\\PresetTool.rc - IDD_CT_DIALOG - Dialog",
+              "RelativeToolTip": "PresetTool.rc - IDD_CT_DIALOG - Dialog",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-06-21T11:36:31.596Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PresetTool.idl",
+              "DocumentMoniker": "C:\\Osstem\\VersionControl\\PresetTool_Clone\\PresetTool.idl",
+              "RelativeDocumentMoniker": "PresetTool.idl",
+              "ToolTip": "C:\\Osstem\\VersionControl\\PresetTool_Clone\\PresetTool.idl",
+              "RelativeToolTip": "PresetTool.idl",
+              "ViewState": "AQIAAAYAAAAAAAAAAADwvxEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000564|",
+              "WhenOpened": "2024-06-19T06:08:06.748Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 11,
               "Title": "CustomButton.cpp",
               "DocumentMoniker": "C:\\Osstem\\VersionControl\\PresetTool_Clone\\CustomButton.cpp",
@@ -254,8 +247,7 @@
               "RelativeToolTip": "CustomButton.cpp",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-06-21T11:58:04.978Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-21T11:58:04.978Z"
             },
             {
               "$type": "Document",
@@ -267,8 +259,7 @@
               "RelativeToolTip": "CTDlg.cpp",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-06-21T11:58:06.638Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-21T11:58:06.638Z"
             },
             {
               "$type": "Document",
@@ -280,24 +271,11 @@
               "RelativeToolTip": "CephDlg.cpp",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-06-13T08:32:11.777Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-13T08:32:11.777Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "PresetTool.rc - IDD_PRESETTOOL_DIALOG - Dialog",
-              "DocumentMoniker": "C:\\Osstem\\VersionControl\\PresetTool_Clone\\PresetTool.rc",
-              "RelativeDocumentMoniker": "PresetTool.rc",
-              "ToolTip": "C:\\Osstem\\VersionControl\\PresetTool_Clone\\PresetTool.rc - IDD_PRESETTOOL_DIALOG - Dialog",
-              "RelativeToolTip": "PresetTool.rc - IDD_PRESETTOOL_DIALOG - Dialog",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2024-06-21T11:20:01.687Z",
-              "EditorCaption": " - IDD_PRESETTOOL_DIALOG - Dialog"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 17,
               "Title": "pch.h",
               "DocumentMoniker": "C:\\Osstem\\VersionControl\\PresetTool_Clone\\pch.h",
               "RelativeDocumentMoniker": "pch.h",
@@ -309,7 +287,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 16,
               "Title": "CTDlg.h",
               "DocumentMoniker": "C:\\Osstem\\VersionControl\\PresetTool_Clone\\CTDlg.h",
               "RelativeDocumentMoniker": "CTDlg.h",
@@ -317,12 +295,11 @@
               "RelativeToolTip": "CTDlg.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-06-21T11:36:28.372Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-21T11:36:28.372Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 15,
               "Title": "CephDlg.h",
               "DocumentMoniker": "C:\\Osstem\\VersionControl\\PresetTool_Clone\\CephDlg.h",
               "RelativeDocumentMoniker": "CephDlg.h",
@@ -330,12 +307,11 @@
               "RelativeToolTip": "CephDlg.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-06-21T11:36:29.498Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-21T11:36:29.498Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 18,
               "Title": "PresetTool.rc - IDD_ABOUTBOX - Dialog",
               "DocumentMoniker": "C:\\Osstem\\VersionControl\\PresetTool_Clone\\PresetTool.rc",
               "RelativeDocumentMoniker": "PresetTool.rc",
@@ -346,19 +322,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 14,
               "Title": "PresetTool.rc - IDD_CEPH_DIALOG - Dialog",
               "DocumentMoniker": "C:\\Osstem\\VersionControl\\PresetTool_Clone\\PresetTool.rc",
               "RelativeDocumentMoniker": "PresetTool.rc",
               "ToolTip": "C:\\Osstem\\VersionControl\\PresetTool_Clone\\PresetTool.rc - IDD_CEPH_DIALOG - Dialog",
               "RelativeToolTip": "PresetTool.rc - IDD_CEPH_DIALOG - Dialog",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2024-06-19T01:59:30.955Z",
-              "EditorCaption": " - IDD_CEPH_DIALOG - Dialog"
+              "WhenOpened": "2024-06-19T01:59:30.955Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 19,
               "Title": "CustomButton.h",
               "DocumentMoniker": "C:\\Osstem\\VersionControl\\PresetTool_Clone\\CustomButton.h",
               "RelativeDocumentMoniker": "CustomButton.h",
@@ -370,7 +345,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 20,
               "Title": "appmodul.cpp",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.39.33519\\atlmfc\\src\\mfc\\appmodul.cpp",
               "RelativeDocumentMoniker": "..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Professional\\VC\\Tools\\MSVC\\14.39.33519\\atlmfc\\src\\mfc\\appmodul.cpp",
