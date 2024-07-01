@@ -65,7 +65,7 @@ void PanoDlg::sampleImageHandler(CString pathName)
 	}
 	// 2024.07.01 Alpha, Beta 이미지 사이즈 임의설정
 	
-	int nAlphaImageSizeWidth = 2320, nAlphaImageSizeHeight=1152;
+	int nAlphaImageSizeWidth = 2320, nAlphaImageSizeHeight = 1152;
 	int nBetaImageSizeWidth = 2320, nBetaImageSizeHeight = 1152;
 
 	m_panoAlphaImage.Create(nAlphaImageSizeWidth, nAlphaImageSizeHeight, 32);	// alpha 이미지 32비트로 생성
@@ -76,16 +76,12 @@ void PanoDlg::sampleImageHandler(CString pathName)
 	unsigned char* pDestAlphaImage = new unsigned char[nAlphaImageSizeWidth * nAlphaImageSizeHeight * 4]; // 출력할때 32비트 이미지로 출력하기 위해서 8비트 이미지를 32비트 이미지로 바꾸기 위해서 width *  height*4 크기의 메모리를 할당한다. 
 	memset(pDestAlphaImage, 0, sizeof(char) * nAlphaImageSizeWidth * nAlphaImageSizeHeight * 4);
 
-	unsigned short* pSrcBetaImage = new unsigned short[nBetaImageSizeWidth * nBetaImageSizeHeight]; // pano 영상 unsigned short 16bit
+	unsigned short* pSrcBetaImage = new unsigned short[nBetaImageSizeWidth * nBetaImageSizeHeight];
 	memset(pSrcBetaImage, 0, sizeof(short) * nBetaImageSizeWidth * nBetaImageSizeHeight);
-	unsigned char* pDestBetaImage = new unsigned char[nBetaImageSizeWidth * nBetaImageSizeHeight * 4]; // 출력할때 32비트 이미지로 출력하기 위해서 8비트 이미지를 32비트 이미지로 바꾸기 위해서 width *  height*4 크기의 메모리를 할당한다.
+	unsigned char* pDestBetaImage = new unsigned char[nBetaImageSizeWidth * nBetaImageSizeHeight * 4]; 
 	memset(pDestBetaImage, 0, sizeof(char) * nBetaImageSizeWidth * nBetaImageSizeHeight * 4);
 
-
-
-
-	// p_dest_image, p_src_image는 동적 할당된 메모리의 시작 주소를 기억하고 있어야지 
-	// 작업이 끝난 후에 동적 할당된 메모리의 주소를 해제할 수 있다. 
+	// pDestAlphaImage, pDestBetaImage, pSrcAlphaImage, pSrcBetaImage 는 동적 할당된 메모리의 시작 주소를 기억하고 있어야 작업이 끝난 후에 동적 할당된 메모리의 주소를 해제할 수 있다. 
 	unsigned short* pSrcAlphaPos = pSrcAlphaImage;
 	unsigned char* pDestAlphaPos = pDestAlphaImage;
 
@@ -107,11 +103,9 @@ void PanoDlg::sampleImageHandler(CString pathName)
 		fileAlpha.Close();
 		::SetBitmapBits(m_panoAlphaImage, nAlphaImageSizeWidth * nAlphaImageSizeHeight * 4, pDestAlphaImage);
 
-
-
-		//m_image.Save(_T("test_re.bmp"), Gdiplus::ImageFormatBMP);  //디버깅용
+		//m_panoAlphaImage.Load(_T("test_re.bmp"), Gdiplus::ImageFormatBMP);  //디버깅용
 	}
-;
+
 
 	if (fileBeta.Open(pathName, CFile::modeRead | CFile::shareExclusive) != NULL)
 	{
@@ -126,6 +120,8 @@ void PanoDlg::sampleImageHandler(CString pathName)
 		}
 		fileBeta.Close();
 		::SetBitmapBits(m_panoBetaImage, nBetaImageSizeWidth * nBetaImageSizeHeight * 4, pDestAlphaImage);
+	
+		//m_panoBetaImage.Load(_T("test_re.bmp"), Gdiplus::ImageFormatBMP);  //디버깅용
 	}
 
 	delete[] pDestAlphaImage;  // 이미지 변환에 사용한 메모리를 해제(8비트 이미지를 읽기 위해 사용한 메모리를 해제한다.)

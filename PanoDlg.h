@@ -23,10 +23,13 @@ public:
 
 protected:
 	virtual void DoDataExchange(CDataExchange* pDX);
+	
 	void sampleImageHandler(CString pathName);
-	// DDX/DDV 지원입니다.
+
 	void OnDrawImage();
+	
 	DECLARE_MESSAGE_MAP()
+
 public:
 	afx_msg void OnBnClickedPanoRecentLoadButton();
 	afx_msg void OnBnClickedPanoSampleLoadButton();
