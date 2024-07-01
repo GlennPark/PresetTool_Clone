@@ -1,8 +1,2 @@
-﻿  PresetToolDlg.cpp
-C:\Osstem\VersionControl\PresetTool_Clone\PresetToolDlg.cpp(150,56): warning C4244: '인수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  (소스 파일 '/PresetToolDlg.cpp'을(를) 컴파일하는 중)
-  
-C:\Osstem\VersionControl\PresetTool_Clone\PresetToolDlg.cpp(151,59): warning C4244: '인수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  (소스 파일 '/PresetToolDlg.cpp'을(를) 컴파일하는 중)
-  
-  PresetTool.vcxproj -> C:\Osstem\VersionControl\PresetTool_Clone\x64\Debug\PresetTool.exe
+﻿  PanoDlg.cpp
+  PresetTool.vcxproj -> C:\OSSTEM\VersionControl\PresetTool_Clone\x64\Debug\PresetTool.exe

@@ -17,10 +17,13 @@ public:
 #ifdef AFX_DESIGN_TIME
 	enum { IDD = IDD_PANO_DIALOG };
 #endif
-	CImage m_image;
+	// Alpha, Beta 이미지
+	CImage m_panoAlphaImage;
+	CImage m_panoBetaImage;
+
 protected:
 	virtual void DoDataExchange(CDataExchange* pDX);
-	void sampleData_Load_ImgView(CString path_name);
+	void sampleImageHandler(CString pathName);
 	// DDX/DDV 지원입니다.
 	void OnDrawImage();
 	DECLARE_MESSAGE_MAP()

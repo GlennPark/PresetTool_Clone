@@ -15,11 +15,17 @@
 #define IDD_CT_DIALOG                   132
 #define IDC_MAIN_TAB                    1000
 #define IDC_CEPH_EXIST_STATIC           1001
+#define IDC_CEPH_ALPHA_STATIC           1001
 #define IDC_CEPH_APPLY_STATIC           1002
+#define IDC_CEPH_BETA_STATIC            1002
 #define IDC_CT_EXIST_STATIC             1003
+#define IDC_CT_ALPHA_STATIC             1003
 #define IDC_CT_APPLY_STATIC             1004
+#define IDC_CT_BETA_STATIC              1004
 #define IDC_PANO_EXIST_STATIC           1005
+#define IDC_PANO_ALPHA_STATIC           1005
 #define IDC_PANO_APPLY_STATIC           1006
+#define IDC_PANO_BETA_STATIC            1006
 #define IDC_EQUIPMENT_STATIC            1007
 #define IDC_EQUIPMENT_NAME_STATIC       1008
 #define IDC_PANO_STATIC                 1009

@@ -43,9 +43,10 @@ END_MESSAGE_MAP()
 void PanoDlg::OnPaint()
 {
 
-	if (m_image.IsNull() == false)
+	if (m_panoAlphaImage.IsNull() || m_panoAlphaImage.IsNull() == false)
+	{
 		OnDrawImage();
-	
+	}
 	CDialogEx::OnPaint();
 
 }
@@ -55,85 +56,144 @@ void PanoDlg::resize()
 }
 
 ///2020.07.20 : Sample Image data 불러옴
-void PanoDlg::sampleData_Load_ImgView(CString path_name)
+void PanoDlg::sampleImageHandler(CString pathName)
 {
-	if (m_image.IsNull() == false)
+	if (m_panoAlphaImage.IsNull() || m_panoAlphaImage.IsNull() == false)
 	{
-		m_image.Destroy();
+		m_panoAlphaImage.Destroy();
+		m_panoBetaImage.Destroy();
 	}
-	int m_nImageSize_Width = 2320, m_nImageSize_Height=1152;
-	m_image.Create(m_nImageSize_Width, m_nImageSize_Height, 32);	// CImage m_image.Create(너비,높이,비트수,알파값유뮤)
+	// 2024.07.01 Alpha, Beta 이미지 사이즈 임의설정
+	
+	int nAlphaImageSizeWidth = 2320, nAlphaImageSizeHeight=1152;
+	int nBetaImageSizeWidth = 2320, nBetaImageSizeHeight = 1152;
 
-	unsigned short* p_src_image = new unsigned short[m_nImageSize_Width * m_nImageSize_Height]; // pano 영상 unsigned short 16bit
-	memset(p_src_image, 0, sizeof(short) * m_nImageSize_Width * m_nImageSize_Height);
+	m_panoAlphaImage.Create(nAlphaImageSizeWidth, nAlphaImageSizeHeight, 32);	// alpha 이미지 32비트로 생성
+	m_panoBetaImage.Create(nBetaImageSizeWidth, nBetaImageSizeHeight, 32);	// beta 이미지 32비트로 생성
 
-	unsigned char* p_dest_image = new unsigned char[m_nImageSize_Width * m_nImageSize_Height * 4]; // 출력할때 32비트 이미지로 출력하기 위해서 8비트 이미지를 32비트 이미지로 바꾸기 위해서 width *  height*4 크기의 메모리를 할당한다. 
-	memset(p_dest_image, 0, sizeof(char) * m_nImageSize_Width * m_nImageSize_Height * 4);
+	unsigned short* pSrcAlphaImage = new unsigned short[nAlphaImageSizeWidth * nAlphaImageSizeHeight]; // pano 영상 unsigned short 16bit
+	memset(pSrcAlphaImage, 0, sizeof(short) * nAlphaImageSizeWidth * nAlphaImageSizeHeight);
+	unsigned char* pDestAlphaImage = new unsigned char[nAlphaImageSizeWidth * nAlphaImageSizeHeight * 4]; // 출력할때 32비트 이미지로 출력하기 위해서 8비트 이미지를 32비트 이미지로 바꾸기 위해서 width *  height*4 크기의 메모리를 할당한다. 
+	memset(pDestAlphaImage, 0, sizeof(char) * nAlphaImageSizeWidth * nAlphaImageSizeHeight * 4);
+
+	unsigned short* pSrcBetaImage = new unsigned short[nBetaImageSizeWidth * nBetaImageSizeHeight]; // pano 영상 unsigned short 16bit
+	memset(pSrcBetaImage, 0, sizeof(short) * nBetaImageSizeWidth * nBetaImageSizeHeight);
+	unsigned char* pDestBetaImage = new unsigned char[nBetaImageSizeWidth * nBetaImageSizeHeight * 4]; // 출력할때 32비트 이미지로 출력하기 위해서 8비트 이미지를 32비트 이미지로 바꾸기 위해서 width *  height*4 크기의 메모리를 할당한다.
+	memset(pDestBetaImage, 0, sizeof(char) * nBetaImageSizeWidth * nBetaImageSizeHeight * 4);
+
+
+
+
 	// p_dest_image, p_src_image는 동적 할당된 메모리의 시작 주소를 기억하고 있어야지 
 	// 작업이 끝난 후에 동적 할당된 메모리의 주소를 해제할 수 있다. 
-	unsigned char* p_dest_pos = p_dest_image;
-	unsigned short* p_src_pos = p_src_image;
+	unsigned short* pSrcAlphaPos = pSrcAlphaImage;
+	unsigned char* pDestAlphaPos = pDestAlphaImage;
 
-	CFile file;
-	if (file.Open(path_name, CFile::modeRead | CFile::shareExclusive) != NULL)
+	unsigned short* pSrcBetaPos = pSrcBetaImage;
+	unsigned char* pDestBetaPos = pDestBetaImage;
+
+	CFile fileAlpha, fileBeta;
+	if (fileAlpha.Open(pathName, CFile::modeRead | CFile::shareExclusive) != NULL)
 	{
-		UINT uLength = UINT(file.GetLength());
-		file.Read(p_src_image, uLength);
-		for (int i = 0; i < m_nImageSize_Width * m_nImageSize_Height; i++)
+		UINT uAlphaLength = UINT(fileAlpha.GetLength());
+		fileAlpha.Read(pSrcAlphaImage, uAlphaLength);
+		for (int i = 0; i < nAlphaImageSizeWidth * nAlphaImageSizeHeight; i++)
 		{
-			*p_dest_pos++ = (char)((*p_src_pos) / 257); // Blue 
-			*p_dest_pos++ = (char)((*p_src_pos) / 257); // -Green 
-			*p_dest_pos++ = (char)((*p_src_pos++) / 257); // Red 
-			*p_dest_pos++ = 0xFF; // Alpha 
+			*pDestAlphaPos++ = (char)((*pSrcAlphaPos) / 256); // Blue 
+			*pDestAlphaPos++ = (char)((*pSrcAlphaPos) / 256); // -Green 
+			*pDestAlphaPos++ = (char)((*pSrcAlphaPos++) / 256); // Red 
+			*pDestAlphaPos++ = 0xFF; // Alpha 
 		}
-		file.Close();
-		::SetBitmapBits(m_image, m_nImageSize_Width * m_nImageSize_Height * 4, p_dest_image);
+		fileAlpha.Close();
+		::SetBitmapBits(m_panoAlphaImage, nAlphaImageSizeWidth * nAlphaImageSizeHeight * 4, pDestAlphaImage);
+
+
+
 		//m_image.Save(_T("test_re.bmp"), Gdiplus::ImageFormatBMP);  //디버깅용
 	}
-	delete[] p_dest_image;  // 이미지 변환에 사용한 메모리를 해제(8비트 이미지를 읽기 위해 사용한 메모리를 해제한다.)
-	delete[] p_src_image;
+;
+
+	if (fileBeta.Open(pathName, CFile::modeRead | CFile::shareExclusive) != NULL)
+	{
+		UINT uBetaLength = UINT(fileBeta.GetLength());
+		fileBeta.Read(pSrcBetaImage, uBetaLength);
+		for (int i = 0; i < nBetaImageSizeWidth * nBetaImageSizeHeight; i++)
+		{
+			*pDestBetaPos++ = (char)((*pSrcBetaPos) / 256); // Blue 
+			*pDestBetaPos++ = (char)((*pSrcBetaPos) / 256); // -Green 
+			*pDestBetaPos++ = (char)((*pSrcBetaPos++) / 256); // Red 
+			*pDestBetaPos++ = 0xFF; // Alpha
+		}
+		fileBeta.Close();
+		::SetBitmapBits(m_panoBetaImage, nBetaImageSizeWidth * nBetaImageSizeHeight * 4, pDestAlphaImage);
+	}
+
+	delete[] pDestAlphaImage;  // 이미지 변환에 사용한 메모리를 해제(8비트 이미지를 읽기 위해 사용한 메모리를 해제한다.)
+	delete[] pSrcAlphaImage;
+
+	delete[] pDestBetaImage;
+	delete[] pSrcBetaImage;
+
+	Invalidate();
 }
 
 void PanoDlg::OnDrawImage()
 {
 
 	// Picture Control DC를 생성.
-	CClientDC dc(GetDlgItem(IDC_PANO_EXIST_STATIC));
+	CClientDC dcAlpha(GetDlgItem(IDC_PANO_ALPHA_STATIC));
+	CClientDC dcBeta(GetDlgItem(IDC_PANO_BETA_STATIC));
 
 	// Picture Control 크기를 얻는다.
-	CRect rect;
-	GetDlgItem(IDC_PANO_EXIST_STATIC)->GetClientRect(&rect);
+	CRect rectAlpha, rectBeta;
+	
+	GetDlgItem(IDC_PANO_ALPHA_STATIC)->GetClientRect(&rectAlpha);
+	GetDlgItem(IDC_PANO_BETA_STATIC)->GetClientRect(&rectBeta);
 
-	CDC memDC;
-	CBitmap* pOldBitmap, bitmap;
-
+	CDC memAlphaDC, memBetaDC;
+	
+	CBitmap* pOldAlphaBitmap, pNewAlphaBitmap, pOldBetaBitmap, pNewBetaBitmap;
+	
 	// Picture Control DC에 호환되는 새로운 CDC를 생성. (임시 버퍼)
-	memDC.CreateCompatibleDC(&dc);
-	memDC.SelectObject(m_image);	//TEST
+	memAlphaDC.CreateCompatibleDC(&dcAlpha);
+	memBetaDC.CreateCompatibleDC(&dcBeta);
+
+	memAlphaDC.SelectObject(m_panoAlphaImage);
+	memBetaDC.SelectObject(m_panoBetaImage);
 
 	// Picture Control의 크기와 동일한 비트맵을 생성.
-	//bitmap.CreateCompatibleBitmap(&dc, rect.Width(), rect.Height());
-	CStatic* staticSize = (CStatic*)GetDlgItem(IDC_PANO_EXIST_STATIC);//TEST
-	staticSize->GetWindowRect(rect);//TEST
-	ScreenToClient(&rect);//TEST
+	CStatic* staticSizeAlpha = (CStatic*)GetDlgItem(IDC_PANO_ALPHA_STATIC);
+	CStatic* staticSizeBeta = (CStatic*)GetDlgItem(IDC_PANO_BETA_STATIC);
 
+	staticSizeAlpha->GetWindowRect(rectAlpha);
+	staticSizeBeta->GetWindowRect(rectBeta);
 	
+	ScreenToClient(&rectAlpha);
+	ScreenToClient(&rectBeta);
 
 	// 임시 버퍼에서 방금 생성한 비트맵을 선택하면서, 이전 비트맵을 보존.
-	pOldBitmap = memDC.SelectObject(&bitmap);
-	int m_nImageSize_Width = 2320, m_nImageSize_Height = 1152;
+	pOldAlphaBitmap = memAlphaDC.SelectObject(&pNewAlphaBitmap);
 
-	dc.SetStretchBltMode(COLORONCOLOR);//TEST
-	dc.StretchBlt(0, 0, rect.Width(), rect.Height(), &memDC, 0, 0, m_nImageSize_Width, m_nImageSize_Height, SRCCOPY);
+	int nAlphaImageSizeWidth = 2320, nAlphaImageSizeHeight = 1152;
+	int nBetaImageSizeWidth = 2320, nBetaImageSizeHeight = 1152;
+
+	dcAlpha.SetStretchBltMode(COLORONCOLOR);
+	dcAlpha.StretchBlt(0, 0, rectAlpha.Width(), rectAlpha.Height(), &memAlphaDC, 0, 0, nAlphaImageSizeWidth, nAlphaImageSizeHeight, SRCCOPY);
+
+	dcBeta.SetStretchBltMode(COLORONCOLOR);
+	dcBeta.StretchBlt(0, 0, rectBeta.Width(), rectBeta.Height(), &memBetaDC, 0, 0, nBetaImageSizeWidth, nBetaImageSizeHeight, SRCCOPY);
 
 
 	// 이전 비트맵으로 재설정.
-	//memDC.SelectObject(pOldBitmap);
-	memDC.SelectObject(memDC.SelectObject(m_image));	//TEST
+	memAlphaDC.SelectObject(memAlphaDC.SelectObject(m_panoAlphaImage));
+	memBetaDC.SelectObject(memBetaDC.SelectObject(m_panoBetaImage));
 
 	// 생성한 리소스 해제.
-	memDC.DeleteDC();
-	bitmap.DeleteObject();
+	memAlphaDC.DeleteDC();
+	pNewAlphaBitmap.DeleteObject();
+
+	memBetaDC.DeleteDC();
+	pNewBetaBitmap.DeleteObject();
 
 }
 
@@ -150,7 +210,7 @@ void PanoDlg::OnBnClickedPanoSampleLoadButton()
 	if (fileDlg.DoModal() == IDOK)
 	{
 		CString filePath = fileDlg.GetPathName();
-		sampleData_Load_ImgView(filePath);
+		sampleImageHandler(filePath);
 
 	}
 
