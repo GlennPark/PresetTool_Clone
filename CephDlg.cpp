@@ -8,7 +8,6 @@
 //#include "PresetTool.h"
 #include "afxdialogex.h"
 
-
 // CephDlg 대화 상자
 
 IMPLEMENT_DYNAMIC(CephDlg, CDialogEx)
@@ -65,7 +64,7 @@ void CephDlg::sampleImageHandler(CString pathName)
 	m_cephAlphaImage.Create(nAlphaImageSizeWidth, nAlphaImageSizeHeight, 32);	// alpha 이미지 32비트로 생성
 	m_cephBetaImage.Create(nBetaImageSizeWidth, nBetaImageSizeHeight, 32);	// beta 이미지 32비트로 생성
 
-	unsigned short* pSrcAlphaImage = new unsigned short[nAlphaImageSizeWidth * nAlphaImageSizeHeight]; // pano 영상 unsigned short 16bit
+	unsigned short* pSrcAlphaImage = new unsigned short[nAlphaImageSizeWidth * nAlphaImageSizeHeight]; // ceph 영상 unsigned short 16bit
 	memset(pSrcAlphaImage, 0, sizeof(short) * nAlphaImageSizeWidth * nAlphaImageSizeHeight);
 	unsigned char* pDestAlphaImage = new unsigned char[nAlphaImageSizeWidth * nAlphaImageSizeHeight * 4]; // 출력할때 32비트 이미지로 출력하기 위해서 8비트 이미지를 32비트 이미지로 바꾸기 위해서 width *  height*4 크기의 메모리를 할당한다. 
 	memset(pDestAlphaImage, 0, sizeof(char) * nAlphaImageSizeWidth * nAlphaImageSizeHeight * 4);
@@ -97,7 +96,7 @@ void CephDlg::sampleImageHandler(CString pathName)
 		fileAlpha.Close();
 		::SetBitmapBits(m_cephAlphaImage, nAlphaImageSizeWidth * nAlphaImageSizeHeight * 4, pDestAlphaImage);
 
-		//m_panoAlphaImage.Load(_T("test_re.bmp"), Gdiplus::ImageFormatBMP);  //디버깅용
+		//m_cephAlphaImage.Load(_T("test_re.bmp"), Gdiplus::ImageFormatBMP);  //디버깅용
 	}
 
 
@@ -115,7 +114,7 @@ void CephDlg::sampleImageHandler(CString pathName)
 		fileBeta.Close();
 		::SetBitmapBits(m_cephBetaImage, nBetaImageSizeWidth * nBetaImageSizeHeight * 4, pDestAlphaImage);
 
-		//m_panoBetaImage.Load(_T("test_re.bmp"), Gdiplus::ImageFormatBMP);  //디버깅용
+		//m_cephBetaImage.Load(_T("test_re.bmp"), Gdiplus::ImageFormatBMP);  //디버깅용
 	}
 
 	delete[] pDestAlphaImage;  // 이미지 변환에 사용한 메모리를 해제(8비트 이미지를 읽기 위해 사용한 메모리를 해제한다.)
@@ -193,6 +192,9 @@ void CephDlg::OnDrawImage()
 
 void CephDlg::OnBnClickedCephSampleLoadButton()
 {
+	AfxMessageBox(_T("CephDlg::OnBnClickedCephSampleLoadButton()"));
+
+
 	// TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.
 	CFileDialog fileDlg(TRUE, _T("raw"), nullptr, OFN_FILEMUSTEXIST | OFN_HIDEREADONLY, _T("raw Files (*.raw)|*.raw|All Files (*.*)|*.*||"));
 	if (fileDlg.DoModal() == IDOK)
@@ -200,6 +202,7 @@ void CephDlg::OnBnClickedCephSampleLoadButton()
 		CString filePath = fileDlg.GetPathName();
 		sampleImageHandler(filePath);
 
+		AfxMessageBox(filePath);
 	}
 
 	// TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.

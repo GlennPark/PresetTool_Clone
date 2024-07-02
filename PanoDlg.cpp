@@ -2,7 +2,6 @@
 //
 
 #include "pch.h"
-
 #include "PanoDlg.h"
 
 //2024.06.19 pch 적용을 위한 기타 헤더 비활성화
@@ -191,6 +190,7 @@ void PanoDlg::OnDrawImage()
 	memBetaDC.DeleteDC();
 	pNewBetaBitmap.DeleteObject();
 
+	
 }
 
 
