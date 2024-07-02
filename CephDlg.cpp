@@ -30,7 +30,6 @@ void CephDlg::DoDataExchange(CDataExchange* pDX)
 
 BEGIN_MESSAGE_MAP(CephDlg, CDialogEx)
 	ON_BN_CLICKED(IDC_CEPH_SAMPLE_LOAD_BUTTON, &CephDlg::OnBnClickedCephSampleLoadButton)
-
 	ON_WM_PAINT()
 	ON_WM_SIZE()
 END_MESSAGE_MAP()
